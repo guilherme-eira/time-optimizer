@@ -505,4 +505,10 @@
     .new-task-form {
         width: 80%;
     }
+
+    @media screen and (max-width: 550px) {
+        .list-item {
+            min-height: 22em;
+        }
+    }
 }
