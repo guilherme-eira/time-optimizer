@@ -312,6 +312,10 @@
         justify-content: center;
     }
 
+    .send-strategy-button {
+        width: 30%;
+    }
+
     .cycles {
         gap: 1em;
     }
