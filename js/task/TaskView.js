@@ -262,7 +262,7 @@ export default class TaskView {
         } if (e.target.name  == 'filter') {
             localStorage.setItem('filter', filterSelector.value);
         }
-        this.renderTasks(tasks);
+        this.renderContent(tasks);
     }
 
     static searchTaskByName() {
@@ -286,9 +286,9 @@ export default class TaskView {
         } else {
             sortedTasks = tasks.sort((a, b) => {
                 if (new Date(a.date) > new Date(b.date)) {
-                    return -1
-                } else if (new Date(a.date) < new Date(b.date)) {
                     return +1
+                } else if (new Date(a.date) < new Date(b.date)) {
+                    return -1
                 } else {
                     return 0;
                 }
