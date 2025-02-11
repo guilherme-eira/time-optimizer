@@ -1,0 +1,339 @@
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    padding: 4em 3em 2em 3em;
+    min-height: 100vh;
+    background-image: linear-gradient(90deg,
+            hsl(0deg 0% 99%) 0%,
+            hsl(344deg 0% 97%) 9%,
+            hsl(344deg 0% 94%) 18%,
+            hsl(344deg 0% 92%) 27%,
+            hsl(344deg 0% 90%) 36%,
+            hsl(344deg 0% 87%) 45%,
+            hsl(344deg 0% 85%) 55%,
+            hsl(344deg 0% 83%) 64%,
+            hsl(344deg 0% 81%) 73%,
+            hsl(344deg 0% 78%) 82%,
+            hsl(344deg 0% 76%) 91%,
+            hsl(0deg 0% 74%) 100%);
+}
+
+.dashboard-title {
+    font-size: 2.3em;
+    font-weight: 600;
+    color: var(--header-background);
+    padding-bottom: .5em;
+    border-bottom: 2px solid var(--header-background);
+}
+
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.dashboard-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 3em 0 2em 0;
+    width: 100%;
+}
+
+.card-info-item {
+    padding: 1.5em;
+    background-color: var(--primary-light-color);
+    border-radius: .5em;
+    margin-bottom: 1em;
+    font-size: 1.1em;
+    color: var(--header-background);
+    border-left: 0.5em solid lightseagreen;
+    width: 25%;
+}
+
+.card-title {
+    color: var(--highlight-color);
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+
+.card-value {
+    font-weight: 600;
+}
+
+.charts {
+    display: flex;
+    align-items: end;
+    gap: 2em;
+    margin-bottom: 3em;
+}
+
+.chart-title {
+    font-size: 1em;
+    background-color: var(--highlight-color);
+    color: var(--primary-light-color);
+    padding: .8em;
+    border-top-right-radius: 1em;
+    border-top-left-radius: 1em;
+    margin-bottom: -.5em;
+}
+
+.feedback-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 1.5em;
+    background-color: var(--primary-light-color);
+    border-radius: .5em;
+    width: 25em;
+    height: 20.5em;
+    border-left: 0.5em solid lightseagreen;
+}
+
+.feedback-card h5 {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: var(--highlight-color);
+    margin: 1em 0 2.5em 0;
+}
+
+.feedback-card p {
+    font-size: 1.25em;
+    text-align: justify;
+    line-height: 1.5em;
+    width: 90%;
+    margin-left: .5em;
+}
+
+.daily-progress-chart {
+    width: 50em;
+    padding: 1.5em;
+    background-color: var(--primary-light-color);
+    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+
+.priority-distribution-chart {
+    width: 25em;
+    padding: 1.5em;
+    background-color: var(--primary-light-color);
+    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+
+.status-distribution-chart {
+    width: 47.5em;
+    padding: 1.5em;
+    background-color: var(--primary-light-color);
+    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+
+.mobile {
+    display: none;
+}
+
+@media screen and (max-width: 1300px) {
+
+    .daily-progress-chart {
+        width: 35em;
+    }
+
+    .priority-distribution-chart {
+        width: 12em;
+    }
+
+    .status-distribution-chart {
+        width: 35em;
+    }
+
+    .feedback-card {
+        width: 15em;
+        height: 15em;
+        justify-content: center;
+    }
+
+    .feedback-card h5 {
+        margin: 0 0 1em 0;
+    }
+
+    .feedback-card p {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .dashboard-title {
+        margin-bottom: 1em;
+    }
+
+    .charts {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1em;
+    }
+
+    .daily-progress-chart {
+        width: 40em;
+    }
+
+    .priority-distribution {
+        display: flex;
+        align-items: center;
+        gap: 3em;
+    }
+
+    .priority-distribution-chart {
+        width: 22em;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: flex;
+    }
+
+    .cards-info {
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5em;
+        margin: 0;
+    }
+
+    .card-info-item {
+        height: 3em;
+        margin: 0;
+        padding: 1em;
+        width: 80%;
+    }
+
+    .card-title,
+    .card-value {
+        font-size: .8em;
+        margin: 0;
+    }
+
+    .status-distribution-chart {
+        width: 40em;
+    }
+
+    .feedback-card {
+        width: 36em;
+        height: 15em;
+        justify-content: center;
+    }
+
+    .feedback-card h5 {
+        font-size: 1.5em;
+        margin-top: -2em;
+        margin-bottom: 2em;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .dashboard-title {
+        font-size: 1.8em;
+        text-align: center;
+    }
+
+    .daily-progress-chart {
+        width: 32em;
+    }
+
+    .priority-distribution {
+        gap: 1em;
+    }
+
+    .priority-distribution-chart {
+        width: 10em;
+    }
+
+    .status-distribution-chart {
+        width: 32em;
+    }
+
+    .cards-info {
+        width: 50%;
+        gap: .7em;
+    }
+
+    .card-info-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: .7em;
+    }
+
+    .feedback-card {
+        width: 30em;
+        height: 12em;
+    }
+
+    .feedback-card h5 {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .chart-title {
+        font-size: .8em;
+    }
+
+    .daily-progress-chart {
+        width: 22em;
+    }
+
+    .priority-distribution {
+        gap: 1em;
+        width: 90%;
+    }
+
+    .priority-distribution-chart {
+        width: 4em;
+    }
+
+    .cards-info {
+        gap: 1.5em;
+    }
+
+    .card-info-item {
+        height: 1em;
+        width: 70%;
+        gap: .5em;
+    }
+
+    .card-title,
+    .card-value {
+        font-size: .5em;
+    }
+
+    .status-distribution-chart {
+        width: 22em;
+    }
+
+    .feedback-card {
+        width: 19em;
+        height: 8em;
+    }
+
+    .feedback-card h5 {
+        margin: 0 0 1em 0;
+        font-size: .9em;
+    }
+
+    .feedback-card p {
+        font-size: .8em;
+    }
+}

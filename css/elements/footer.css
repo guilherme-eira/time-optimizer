@@ -1,0 +1,31 @@
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.7em;
+    background-color: var(--header-background);
+}
+
+.footer-content {
+    color: var(--main-background);
+}
+
+.footer-link {
+    color: var(--main-background);
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width:1000px) {
+    footer {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .footer-content {
+        font-size: .8em;
+    }
+}

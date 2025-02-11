@@ -1,0 +1,254 @@
+.home {
+    background-image: linear-gradient(90deg,
+            hsl(0, 1%, 23%) 0%,
+            hsl(0deg 1% 32%) 47%,
+            hsl(0deg 0% 43%) 67%,
+            hsl(0deg 0% 54%) 77%,
+            hsl(0deg 0% 65%) 87%,
+            hsl(0deg 0% 77%) 100%);
+}
+
+.home-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 4em 0;
+}
+
+.home-title {
+    font-size: 3.5em;
+    font-weight: 600;
+    margin-bottom: .8em;
+    color: var(--primary-light-color);
+}
+
+strong {
+    color: var(--highlight-color);
+}
+
+.home-paragraph {
+    margin-top: 1.2em;
+    font-size: 1.4em;
+    color: var(--main-background);
+}
+
+.home-start-button {
+    margin-top: 2em;
+    font-size: 1.4em;
+    font-weight: 500;
+    padding: .5em 2em;
+    border: 2px solid var(--highlight-color);
+    border-radius: .5em;
+    background-color: transparent;
+    color: var(--highlight-color);
+    outline: none;
+}
+
+.home-start-button:hover {
+    cursor: pointer;
+    background-color: var(--highlight-color);
+    color: var(--primary-light-color);
+    transition: var(--transition);
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5em;
+    padding: 6em 0;
+    background-image: linear-gradient(
+      90deg,
+      hsl(0deg 0% 99%) 0%,
+      hsl(344deg 0% 97%) 9%,
+      hsl(344deg 0% 94%) 18%,
+      hsl(344deg 0% 92%) 27%,
+      hsl(344deg 0% 90%) 36%,
+      hsl(344deg 0% 87%) 45%,
+      hsl(344deg 0% 85%) 55%,
+      hsl(344deg 0% 83%) 64%,
+      hsl(344deg 0% 81%) 73%,
+      hsl(344deg 0% 78%) 82%,
+      hsl(344deg 0% 76%) 91%,
+      hsl(0deg 0% 74%) 100%
+    );
+}
+
+.features-title {
+    font-size: 1.7em;
+    font-weight: 600;
+    color: var(--header-background);
+}
+
+.cards {
+    display: flex;
+    gap: 7em;
+}
+
+.card-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    background-color: var(--primary-light-color);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 1em;
+    padding: 1em;
+    width: 33.3%;
+    height: 15em;
+    text-align: center;
+}
+
+.card-item:hover {
+    background-color: #f1f1f1;
+}
+
+.card-item-title {
+    font-size: 1.5em;
+    color: var(--header-background);
+    font-weight: 600;
+}
+
+.card-item-paragraph {
+    font-size: 1.1em;
+    color: var(--primary-dark-color);
+}
+
+@media screen and (max-width:1400px) {
+
+    .home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: linear-gradient(180deg,
+                hsl(0, 1%, 23%) 0%,
+                hsl(0, 0%, 27%) 15%,
+                hsl(0deg 0% 43%) 30%,
+                hsl(0, 0%, 62%) 45%,
+                hsl(0, 0%, 81%) 60%,
+                hsl(0, 3%, 94%) 75%);
+    }
+
+    .home-content {
+        text-align: center;
+        padding: 12em 0;
+    }
+
+    .home-title {
+        font-size: 3.7em;
+        margin-bottom: .8em;
+    }
+
+    .home-paragraph {
+        font-size: 1.6em;
+        margin-bottom: .8em;
+        color: var(--main-background);
+    }
+
+    .home-start-button {
+        font-size: 1.6em;
+        background-color: var(--highlight-color);
+        color: var(--primary-light-color);
+    }
+
+    .home-image {
+        display: none;
+    }
+
+    .features {
+        width: 100%;
+    }
+
+    .features-title {
+        font-size: 2em;
+    }
+
+    .cards {
+        gap: 3em;
+        width: 80%;
+    }
+
+    .card-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+        background-color: var(--primary-light-color);
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        border-radius: 1em;
+        padding: 1em;
+        width: 33.3%;
+        height: 15em;
+        text-align: center;
+    }
+
+    .card-item:hover {
+        background-color: var(--primary-light-color);
+    }
+}
+
+@media screen and (max-width:1000px) {
+
+    .home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: linear-gradient(180deg,
+                hsl(0, 1%, 23%) 0%,
+                hsl(0, 0%, 27%) 10%,
+                hsl(0deg 0% 43%) 20%,
+                hsl(0, 0%, 62%) 30%,
+                hsl(0, 0%, 81%) 40%,
+                hsl(0, 3%, 94%) 50%);
+    }
+
+    .home-content {
+        width: 70%;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-item {
+        padding: 0;
+        width: 90%;
+        height: 20em;
+        padding: .5em;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .home-title {
+        font-size: 2.3em;
+    }
+
+    .home-paragraph {
+        font-size: 1.2em;
+    }
+
+    .home-start-button {
+        font-size: 1.2em;
+    }
+
+    .features-title {
+        font-size: 1.3em;
+    }
+
+    .card-item {
+        width: 90%;
+        height: 12em;
+    }
+
+    .card-item-title {
+        font-size: 1.2em;
+    }
+
+    .card-item-paragraph {
+        font-size: 0.9em;
+    }
+}

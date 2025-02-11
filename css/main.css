@@ -1,0 +1,37 @@
+@import url("reset.css");
+@import url("elements/header.css");
+@import url("elements/footer.css");
+@import url("pages/home.css");
+@import url("pages/tasks.css");
+@import url("pages/timer.css");
+@import url("pages/dashboard.css");
+
+:root {
+    --header-background: #3a3939;
+    --main-background: #cacaca;
+    --highlight-color: #20b2aa;
+    --highlight-color-hover: #2cbeb7;
+    --primary-dark-color: #535353;
+    --primary-light-color: #fafafa;
+    --secondary-light-color: #d1d1d1;
+    --transition: .7s;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    height: 100vh;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+button, input, select {
+  font-family: "Poppins", sans-serif;
+}
+
+.hidden {
+  display: none;
+}

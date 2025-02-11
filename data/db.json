@@ -1,0 +1,36 @@
+{
+  "tasks": [
+    {
+      "id": "86be",
+      "name": "Continuar Curso de Java da Alura",
+      "description": "continuar formação de boas práticas com java",
+      "date": "2025-02-10T17:19:34.513Z",
+      "priority": "Muito importante",
+      "pending": true
+    },
+    {
+      "id": "249a",
+      "name": "Nova Tarefa",
+      "description": "Nova Tarefa Descrição",
+      "date": "2025-02-10T17:38:48.225Z",
+      "priority": "Importante",
+      "pending": true
+    },
+    {
+      "id": "4224",
+      "name": "Teste Dashboard",
+      "description": "Teste Dashboard Descrição",
+      "date": "2025-02-11T13:46:59.325Z",
+      "priority": "Importante",
+      "pending": false
+    },
+    {
+      "id": "9474",
+      "name": "Teste",
+      "description": "BlaBlaBla",
+      "date": "2025-02-11T14:25:28.040Z",
+      "priority": "Importante",
+      "pending": true
+    }
+  ]
+}

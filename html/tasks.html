@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>TimeOptimizer</title>
+</head>
+
+<body data-page="tasks">
+
+    <header>
+        <div class="header-logo">
+            <img src="../assets/hourglass-top.svg" alt="logo do website">
+            <h3 class="header-title"><a class="nav-link" href="home.html">TimeOptimizer</a></h3>
+        </div>
+        <nav>
+            <h5><a class="nav-link" href="tasks.html">MyTasks</a></h5>
+            <h5><a class="nav-link" href="timer.html">Timer</a></h5>
+            <h5><a class="nav-link" href="dashboard.html">Dashboard</a></h5>
+        </nav>
+    </header>
+
+    <main class="tasks">
+        <h2 class="task-title">Minhas Tarefas</h2>
+        <section class="task-content">
+            <div class="options-panel">
+                <div class="options">
+                    <button class="new-task-button desktop" id="new-task-button">Criar nova tarefa<img src="/assets/plus-lg.svg"
+                            alt="símbolo de adição"></button>
+                    <input class="search-input" type="text" placeholder="Busca">
+                    <img class="search-icon" src="../assets/search.svg" alt="ícone de lupa da barra de pesquisa">
+                </div>
+                <div class="options selectors">
+                    <select class="filter-selector" name="filter" id="filter">
+                        <option value="pending">Exibir pendentes</option>
+                        <option value="completed">Exibir concluídas</option>
+                        <option value="all">Exibir todas</option>
+                    </select>
+                    <select class="sorting-selector" name="sorting" id="sorting">
+                        <option value="date" selected>Ordenar por mais recentes</option>
+                        <option value="priority">Ordenar por prioridade</option>
+                    </select>
+                </div>
+            </div>
+            <div class="overlay hidden"></div>
+            <form class="new-task-form hidden">
+                <div class="form-header">
+                    <h3 class="form-title">Nova tarefa</h3>
+                    <button class="cancel-new-task-button">
+                        <img src="../assets/x-lg.svg" alt="ícone de x representando a opção de cancelar">
+                    </button>
+                </div>
+                <input class="hidden" type="text" id="id">
+                <h5>Título</h5>
+                <input type="text" id="title" placeholder="Digite o título da tarefa" maxlength="40">
+                <h5>Descrição</h5>
+                <textarea id="description" placeholder="Digite a descrição da tarefa" maxlength="165"></textarea>
+                <h5>Prioridade</h5>
+                <select class="priority-selector" name="priority" id="priority">
+                    <option value="Baixa prioridade" selected>Baixa prioridade</option>
+                    <option value="Importante">Importante</option>
+                    <option value="Muito importante">Muito Importante</option>
+                </select>
+                <button class="send-new-task-button">Criar</button>
+                <p class="invalid-input-message hidden">Preencha os campos com texto válido</p>
+            </form>
+            <ul class="tasks-list"></ul>
+            <h3 class="empty-list-message hidden">Não há nenhuma tarefa...</h3>    
+            <button class="new-task-button mobile" id="new-task-button-mobile">Criar nova tarefa<img src="/assets/plus-lg.svg"
+                alt="símbolo de adição">
+            </button>
+            <div class="confirmation-dialog hidden">
+                <h3 class="confirmation-text">Tem certeza que deseja excluir essa tarefa?</h3>
+                <div class="confirmation-options">
+                    <button id="confirm">Confirmar</button>
+                    <button id="cancel">Cancelar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h3 class="footer-content">Obrigado por visitar! Me siga no GitHub: <a class="footer-link"
+                href="https://github.com/guilherme-eira" target="_blank">@guilherme-eira</a>.</h3>
+    </footer>
+
+    <script type="module" src="../js/main.js"></script>
+</body>
+
+</html>

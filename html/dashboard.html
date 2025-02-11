@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>TimeOptimizer</title>
+</head>
+
+<body data-page="dashboard">
+
+    <header>
+        <div class="header-logo">
+            <img src="../assets/hourglass-top.svg" alt="logo do website">
+            <h3 class="header-title"><a class="nav-link" href="home.html">TimeOptimizer</a></h3>
+        </div>
+        <nav>
+            <h5><a class="nav-link" href="tasks.html">MyTasks</a></h5>
+            <h5><a class="nav-link" href="timer.html">Timer</a></h5>
+            <h5><a class="nav-link" href="dashboard.html">Dashboard</a></h5>
+        </nav>
+    </header>
+
+    <main class="dashboard">
+        <h1 class="dashboard-title">Dashboard</h1>
+
+        <div class="dashboard-container">
+            <div class="dashboard-content">
+                <ul class="cards-info desktop">
+                    <li class="card-info-item">
+                        <h5 class="card-title">Percentual de Conclusão:</h5>
+                        <p class="card-value" id="completion-percentage">Sem informações</p>
+                    </li>
+                    <li class="card-info-item">
+                        <h5 class="card-title">Média de Tarefas por Dia:</h5>
+                        <p class="card-value" id="daily-average">Sem informações</p>
+                    </li>
+                    <li class="card-info-item">
+                        <h5 class="card-title">Dia com Mais Tarefas:</h5>
+                        <p class="card-value" id="most-tasks-completed">Sem informações</p>
+                    </li>
+                </ul>
+                <div class="charts">
+                    <div class="daily-progress">
+                        <h4 class="chart-title">Progresso diário</h4>
+                        <canvas class="daily-progress-chart"></canvas>
+                    </div>
+                    <div class="priority-distribution">
+                        <div>
+                            <h4 class="chart-title">Tarefas pendentes por prioridade</h4>
+                            <canvas class="priority-distribution-chart"></canvas>
+                        </div>
+                        <ul class="cards-info mobile">
+                            <li class="card-info-item">
+                                <h5 class="card-title">Percentual de Conclusão:</h5>
+                                <p class="card-value" id="completion-percentage-mobile">Sem informações</p>
+                            </li>
+                            <li class="card-info-item">
+                                <h5 class="card-title">Média de Tarefas por Dia:</h5>
+                                <p class="card-value" id="daily-average-mobile">Sem informações</p>
+                            </li>
+                            <li class="card-info-item">
+                                <h5 class="card-title">Dia com Mais Tarefas:</h5>
+                                <p class="card-value" id="most-tasks-completed-mobile">Sem informações</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="charts">
+                <div class="status-distribution">
+                    <h4 class="chart-title">Distribuição das tarefas por status</h4>
+                    <canvas class="status-distribution-chart"></canvas>
+                </div>
+                <div class="feedback-card">
+                    <h5>Feedback:</h5>
+                    <p id="feedback-text">Sem Feedback</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <h3 class="footer-content">Obrigado por visitar! Me siga no GitHub: <a class="footer-link"
+                href="https://github.com/guilherme-eira" target="_blank">@guilherme-eira</a>.</h3>
+    </footer>
+
+    <script type="module" src="../js/main.js"></script>
+</body>
+
+</html>
