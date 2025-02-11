@@ -1,34 +1,130 @@
 {
   "tasks": [
     {
-      "id": "86be",
-      "name": "Continuar Curso de Java da Alura",
-      "description": "continuar formação de boas práticas com java",
-      "date": "2025-02-10T17:19:34.513Z",
+      "id": "f03d",
+      "name": "Revisar Algoritmos em JavaScript",
+      "description": "Estudar algoritmos comuns em JavaScript.",
+      "date": "2025-02-12T09:00:00.000Z",
       "priority": "Muito importante",
       "pending": true
     },
     {
-      "id": "249a",
-      "name": "Nova Tarefa",
-      "description": "Nova Tarefa Descrição",
-      "date": "2025-02-10T17:38:48.225Z",
+      "id": "d4e2",
+      "name": "Completar Curso de Front-end",
+      "description": "Finalizar o módulo de React.",
+      "date": "2025-02-12T14:30:00.000Z",
       "priority": "Importante",
       "pending": true
     },
     {
-      "id": "4224",
-      "name": "Teste Dashboard",
-      "description": "Teste Dashboard Descrição",
-      "date": "2025-02-11T13:46:59.325Z",
+      "id": "2d9c",
+      "name": "Estudar Estruturas de Dados",
+      "description": "Aprofundar conhecimentos em árvores e listas encadeadas.",
+      "date": "2025-02-13T10:15:00.000Z",
+      "priority": "Muito importante",
+      "pending": true
+    },
+    {
+      "id": "a8b9",
+      "name": "Aprimorar Habilidades em Git",
+      "description": "Praticar comandos Git e resolução de conflitos.",
+      "date": "2025-02-13T15:00:00.000Z",
       "priority": "Importante",
       "pending": false
     },
     {
-      "id": "9474",
-      "name": "Teste",
-      "description": "BlaBlaBla",
-      "date": "2025-02-11T14:25:28.040Z",
+      "id": "e4c1",
+      "name": "Assistir Webinar sobre Arquitetura de Software",
+      "description": "Participar de webinar sobre boas práticas em arquitetura de software.",
+      "date": "2025-02-14T11:00:00.000Z",
+      "priority": "Importante",
+      "pending": false
+    },
+    {
+      "id": "bc43",
+      "name": "Praticar SQL",
+      "description": "Resolver exercícios de SQL no Codecademy.",
+      "date": "2025-02-14T14:45:00.000Z",
+      "priority": "Importante",
+      "pending": true
+    },
+    {
+      "id": "5748",
+      "name": "Ler Livro sobre Programação Funcional",
+      "description": "Ler capítulo sobre funções puras e imutabilidade.",
+      "date": "2025-02-15T08:30:00.000Z",
+      "priority": "Importante",
+      "pending": true
+    },
+    {
+      "id": "71c3",
+      "name": "Revisar Curso de APIs RESTful",
+      "description": "Revisar os conceitos de autenticação e segurança em APIs.",
+      "date": "2025-02-15T10:00:00.000Z",
+      "priority": "Muito importante",
+      "pending": false
+    },
+    {
+      "id": "3a87",
+      "name": "Praticar Testes Unitários com Jest",
+      "description": "Escrever testes unitários para funções JavaScript utilizando Jest.",
+      "date": "2025-02-15T13:30:00.000Z",
+      "priority": "Muito importante",
+      "pending": true
+    },
+    {
+      "id": "c72e",
+      "name": "Finalizar Projeto de Portfólio",
+      "description": "Concluir a implementação de uma página de portfólio pessoal.",
+      "date": "2025-02-15T16:00:00.000Z",
+      "priority": "Muito importante",
+      "pending": false
+    },
+    {
+      "id": "b19e",
+      "name": "Fazer Revisão de Código de Projeto",
+      "description": "Revisar o código de um projeto anterior e aplicar melhorias.",
+      "date": "2025-02-16T09:00:00.000Z",
+      "priority": "Importante",
+      "pending": true
+    },
+    {
+      "id": "4d27",
+      "name": "Estudar Design Patterns",
+      "description": "Revisar padrões de design comuns como Singleton e Factory.",
+      "date": "2025-02-16T11:00:00.000Z",
+      "priority": "Muito importante",
+      "pending": false
+    },
+    {
+      "id": "11a6",
+      "name": "Estudar DevOps",
+      "description": "Investigar conceitos fundamentais de DevOps e suas práticas.",
+      "date": "2025-02-16T14:00:00.000Z",
+      "priority": "Importante",
+      "pending": true
+    },
+    {
+      "id": "22b8",
+      "name": "Praticar Docker",
+      "description": "Configurar e rodar containers Docker para ambientes de desenvolvimento.",
+      "date": "2025-02-17T09:00:00.000Z",
+      "priority": "Muito importante",
+      "pending": false
+    },
+    {
+      "id": "bb1d",
+      "name": "Revisar Código de Projeto em React",
+      "description": "Revisar a estrutura do código e aplicar melhorias no projeto React.",
+      "date": "2025-02-17T11:30:00.000Z",
+      "priority": "Importante",
+      "pending": true
+    },
+    {
+      "id": "a59c",
+      "name": "Explorar Cloud Computing",
+      "description": "Estudar conceitos básicos de computação em nuvem e suas soluções.",
+      "date": "2025-02-17T15:00:00.000Z",
       "priority": "Importante",
       "pending": true
     }
