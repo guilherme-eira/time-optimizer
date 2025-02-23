@@ -209,7 +209,9 @@ export default class TimerView {
 
     static handleStartOrPause() {
         if (interval) {
-            this.resetCount();
+            startButton.innerHTML = "Continuar <img class='start-button-image' src='../assets/play-fill.svg'></button>";
+            clearInterval(interval);
+            interval = null;
             restartButton.classList.remove('hidden');
             return;
         }
@@ -222,7 +224,7 @@ export default class TimerView {
 
     static countdown() {
         if (countCurrentValue <= 0) {
-            this.resetCount(true);
+            this.finishCount();
             return;
         }
         countCurrentValue -= 1000;
@@ -230,18 +232,15 @@ export default class TimerView {
         this.formatCount();
     }
 
-    static resetCount(restart) {
-        startButton.innerHTML = "Continuar <img class='start-button-image' src='../assets/play-fill.svg'></button>";
-        clearInterval(interval);
-        interval = null;
-        if (restart) {
-            localStorage.removeItem('count');
-            this.showCompletedTasks();
-            this.resetCounter();
-        }
+    static finishCount() {
+        localStorage.removeItem('count');
+        this.showCompletedTasks();
+        this.resetCounter();
     }
 
     static resetCounter() {
+        clearInterval(interval);
+        interval = null;
         firstClick = true;
         restartButton.classList.add('hidden');
         startButton.innerHTML = "Começar <img class='start-button-image' src='../assets/play-fill.svg'></button>";
