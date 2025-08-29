@@ -13,7 +13,7 @@ TimeOptimizer é uma aplicação web projetada para ajudar os usuários a otimiz
 - **HTML:** Estrutura da página.
 - **CSS:** Estilização da interface.
 - **JavaScript:** Lógica de funcionamento da aplicação.
-- **Chart.js (via CDN):** Para exibição dos gráficos no dashboard.
+- **Chart.js:** Para exibição dos gráficos no dashboard.
 - **JSON Server:** Para simulação de uma API RESTful para armazenamento e manipulação de dados de tarefas.
 
 ## Como Usar
