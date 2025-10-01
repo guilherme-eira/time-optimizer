@@ -1,12 +1,12 @@
-import DashboardController from "./dashboard/DashboardController.js";
-import TaskController from "./task/TaskController.js"; 
-import TimerView from "./timer/TimerView.js";
+import DashboardService from "./service/DashboardService.js";
+import TaskService from "./service/TaskService.js"; 
+import TimerView from "./ui/TimerView.js";
 
 document.addEventListener("DOMContentLoaded", () => {
     const page = document.body.getAttribute("data-page");
 
     if (page === "tasks") {
-        TaskController.loadContent();
+        TaskService.loadContent();
     }
 
     if (page === "timer") {
@@ -15,6 +15,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     if (page === "dashboard") {
-        DashboardController.loadContent();
+        DashboardService.loadContent();
     }
 })

@@ -1,4 +1,4 @@
-export default class TaskModel {
+export default class TaskPayload {
     constructor(name, description, date, priority, id = null, pending = true) {
         if (id != null) {
             this.id = id;

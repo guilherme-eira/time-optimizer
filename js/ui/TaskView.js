@@ -1,6 +1,6 @@
 import UtilityFunctions from "../shared/UtilityFunctions.js";
-import TaskController from "./TaskController.js";
-import TaskModel from "./TaskModel.js";
+import TaskService from "../service/TaskService.js";
+import TaskPayload from "../payload/TaskPayload.js";
 
 const newTaskForm = document.querySelector('.new-task-form');
 const newTaskButton = document.querySelector('#new-task-button');
@@ -172,9 +172,9 @@ export default class TaskView {
     static handleSubmitNewTaskForm() {
         UtilityFunctions.handleOverlay('close', newTaskForm);
         if (idInput.value) {
-            TaskController.editTask(new TaskModel(titleInput.value, descriptionInput.value, date, priorityInput.value, idInput.value));
+            TaskService.editTask(new TaskPayload(titleInput.value, descriptionInput.value, date, priorityInput.value, idInput.value));
         } else {
-            TaskController.createTask(new TaskModel(titleInput.value, descriptionInput.value, date, priorityInput.value));
+            TaskService.createTask(new TaskPayload(titleInput.value, descriptionInput.value, date, priorityInput.value));
         }
     }
 
@@ -235,9 +235,9 @@ export default class TaskView {
     static handleCompleteConfirmation() {
         const task = taskToManipulate[1]
         if (task.pending == true) {
-            TaskController.editTask(new TaskModel(task.name, task.description, date, task.priority, task.id, false))
+            TaskService.editTask(new TaskPayload(task.name, task.description, date, task.priority, task.id, false))
         } else {
-            TaskController.editTask(new TaskModel(task.name, task.description, date, task.priority, task.id))
+            TaskService.editTask(new TaskPayload(task.name, task.description, date, task.priority, task.id))
         }
         taskToManipulate = null;
         UtilityFunctions.handleOverlay('close', confirmationDialog)
@@ -245,7 +245,7 @@ export default class TaskView {
 
     static handleDeleteConfirmation() {
         taskToManipulate[0].remove();
-        TaskController.deleteTask(taskToManipulate[1]);
+        TaskService.deleteTask(taskToManipulate[1]);
         taskToManipulate = null;
         UtilityFunctions.handleOverlay('close', confirmationDialog)
     }
@@ -267,7 +267,7 @@ export default class TaskView {
 
     static searchTaskByName() {
         const regex = new RegExp(searchInput.value, 'i');
-        TaskController.searchTaskByName(regex);
+        TaskService.searchTaskByName(regex);
     }
 
     static applySorting(tasks) {
