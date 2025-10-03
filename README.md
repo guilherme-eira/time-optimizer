@@ -43,8 +43,15 @@ npm run db
 ### População de Dados
 O arquivo `db.json` já estará populado com dados de exemplo para que você possa visualizar o funcionamento do site. Se preferir, basta entrar no arquivo `db.json` e apagar os itens da lista para começar com dados vazios.
 
+### Inicie um servidor local para o front-end
+A maneira mais fácil de fazer isso é usando a extensão Live Server no Visual Studio Code:
+
+- Instale a extensão Live Server no VS Code.
+- Abra a pasta do projeto no VS Code.
+- Clique com o botão direito no arquivo `index.html` e selecione "Open with Live Server".
+
 ### Acesse a aplicação
-Para visualizar a aplicação, abra o arquivo `index.html` usando a extensão Live Server no VS Code ou outro servidor local.
+Seu navegador abrirá automaticamente a aplicação em um endereço como `http://127.0.0.1:5501/index.html`
 
 ## Considerações Finais
 Este projeto teve como objetivo consolidar meus conhecimentos em HTML, CSS e JavaScript, proporcionando uma experiência prática no desenvolvimento de uma aplicação web interativa. Espero que o **TimeOptimizer** seja útil para ajudar na organização do tempo de estudo e aumento da produtividade. 
